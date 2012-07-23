@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    amazon-ec2 (0.9.17)
+      xml-simple (>= 1.0.12)
+    xml-simple (1.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  amazon-ec2

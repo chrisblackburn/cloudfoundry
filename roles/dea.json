@@ -1,0 +1,28 @@
+{
+  "name": "dea",
+  "json_class": "Chef::Role",
+  "description": "CloudFoundry DEA box",
+  "run_list": [
+    "recipe[apt]", 
+    "recipe[user::data_bag]", 
+    "recipe[git]",
+    "recipe[cloudfoundry]"
+  ],
+  "default_attributes": {
+    "user": {
+      "ssh_keygen"    : false,
+      "default_shell" : "/dev/null"
+    },
+    "cloudfoundry": {
+      "role"                : "dea",
+      "domain"              : "",
+      "user"                : "cloudfoundry",
+      "install_dir"         : "/home/cloudfoundry/cloudfoundry",
+      "excluded_components" : "mysql|neo4j|gateway|redis|mongodb|rabbitmq|postgresql",
+      "nats_host"           : "",
+      "nats_user"           : "",
+      "nats_pass"           : ""
+    }
+  },
+  "override_attributes": {}
+}

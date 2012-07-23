@@ -1,0 +1,7 @@
+{
+    "name"             : "dea-1",
+    "ipaddress"        : "",
+    "chef_environment" : "production",
+   	"run_list"         : ["role[dea]"],
+   	"users"            : ["cloudfoundry"]
+}

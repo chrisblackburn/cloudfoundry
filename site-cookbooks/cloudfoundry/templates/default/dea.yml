@@ -1,0 +1,21 @@
+---
+deployment:
+  name: "dea"
+dea:
+  runtimes:
+    - ruby18
+    - ruby19
+    - node
+jobs:
+  install:
+    - dea:
+        runtimes:
+          - ruby18
+          - ruby19
+          - node
+  installed:  
+    - nats:
+        host: "<%= @nats_host %>"
+        port: "4222"
+        user: "<%= @nats_user %>"
+        password: "<%= @nats_pass %>"

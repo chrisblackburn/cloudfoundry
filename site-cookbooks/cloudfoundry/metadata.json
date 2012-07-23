@@ -1,0 +1,31 @@
+{
+  "name": "cloudfoundry",
+  "description": "Creates node configuration file for CloudFoundry installation",
+  "long_description": "",
+  "maintainer": "Chris Blackburn",
+  "maintainer_email": "christopher.blackburn@gmail.com",
+  "license": "Apache 2.0",
+  "platforms": {
+    "ubuntu": ">= 0.0.0"
+  },
+  "dependencies": {
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "cloudfoundry::create_node_config": "Creates node configuration file"
+  },
+  "version": "0.1.0"
+}
